@@ -1,4 +1,5 @@
 # Rock-Paper-Scissors
+
 Rock-Paper-Scissors Game in JavaScript
 
 This repository contains a simple Rock-Paper-Scissors game implemented using HTML, CSS, and JavaScript.
