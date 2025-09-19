@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: bisque;
+      }
+      h1 {
+        color: brown;
+        text-align: center;
+        margin-top: 200px;
+      }
+      .rpc{
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        justify-content: center;
+      }
+      button{
+        height: 50px;
+        width: 100px;
+        padding: 10px;
+        background-color: aqua;
+        border-radius: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1><br><br><br>
+    <div class="rpc">
+      <button
+        onclick="
+  const a = Math.floor(Math.random()*3);
+  let cm1 = '';
+  if(a == 1) cm1 =  'Rock';
+  else if(a == 2) cm1 = 'Paper';
+  else cm1 = 'Scissors';
+  let r1 = '';
+  if(cm1 === 'Rock') r1 = 'Tie';
+  else if(cm1 === 'Paper') r1 = 'Lose';
+  else r1 = 'Win';
+  if(r1 === 'Tie') alert(`Computer move is ${cm1}. ` + `It's a tie`);
+  else alert(`Computer move is ${cm1}. ` + `You ${r1}`);
+  "
+      >
+        Rock
+      </button>
+      <button
+        onclick="
+  const b = Math.floor(Math.random()*3);
+  let cm2 = '';
+  if(b == 1) cm2 =  'Scissors';
+  else if(b == 2) cm2 =  'Rock';
+  else cm2 = 'Paper';
+  let r2 = '';
+  if(cm2 === 'Rock') r2 = 'Lose';
+  else if(cm2 === 'Paper') r2 = 'Tie';
+  else r2 = 'Win';
+  if(r2 === 'Tie') alert(`Computer move is ${cm2}. ` + `It's a tie`);
+  else alert(`Computer move is ${cm1}. ` + `You ${r2}`);
+  "
+      >
+        Paper
+      </button>
+      <button
+        onclick="
+  const c = Math.floor(Math.random()*3);
+  let cm3 = '';
+  if(c == 1) cm3 =  'Rock';
+  else if(c == 2) cm3 =  'Scissors';
+  else cm3 = 'Paper';
+  let r3 = '';
+  if(cm3 === 'Rock') r3 = 'Win';
+  else if(cm3 === 'Paper') r3 = 'Lose';
+  else r3 = 'Tie';
+  if(r3 === 'Tie') alert(`Computer move is ${cm3}. ` + `It's a tie`);
+  else alert(`Computer move is ${cm3}. ` + `You ${r3}`);
+  "
+      >
+        Scissors
+      </button>
+    </div>
+  </body>
+</html>
