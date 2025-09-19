@@ -1,5 +1,5 @@
 # Rock-Paper-Scissors
-# Rock-Paper-Scissors Game in JavaScript
+Rock-Paper-Scissors Game in JavaScript
 
 This repository contains a simple Rock-Paper-Scissors game implemented using HTML, CSS, and JavaScript.
 The game allows the user to select Rock, Paper, or Scissors, and then generates a random move for the computer. The result of each round is displayed in the console, showing the player’s choice, the computer’s choice, and can be extended to determine the winner.
